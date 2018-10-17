@@ -1,16 +1,20 @@
 require 'sinatra'
-get '/random-cat' do
-  @name = ["Amigo", "Oscar", "Viking"].sample
-  erb :index
+
+get '/cat-form' do
+  erb :cat_form
 end
 
-get '/named-cat' do
+post '/named-cat' do
   p params
    @name = params[:name]
   erb :index
 end
 
+# get '/secret' do
+#   'This is a secrect page2'
+# end
 
-get '/secret' do
-  'This is a secrect page2'
-end
+# get '/random-cat' do
+#   @name = ["Amigo", "Oscar", "Viking"].sample
+#   erb :index
+# end
