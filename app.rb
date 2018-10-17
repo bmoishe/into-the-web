@@ -7,11 +7,11 @@ end
 
 
 get '/secret' do
-  'This is a secrect page1'
+  'This is a secrect page2'
 end
 
 get '/cat' do
-  "<div>
-  <img scr='http://bit.ly/1eze8aE'>
-  </div>"
+  "<div style='border: 3px dashed red'>
+     <img src='http://bit.ly/1eze8aE'>
+   </div>"
 end
